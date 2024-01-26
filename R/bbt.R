@@ -95,7 +95,8 @@ bbt_bib <- function(keys, translator = getOption("rbbt.default.translator", "bib
   if (!is.null(result$error)) {
     stop(result$error$message, call. = FALSE)
   } else {
-    .action(result$result[[3]])
+    # .action(result$result[[3]])
+    .action(result$result)
   }
 }
 
